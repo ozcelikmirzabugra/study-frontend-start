@@ -1,0 +1,43 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-header">
+      <h3 class="cart-title h1" id="title">Todo App</h3>
+    </div>
+    <ul id="task-list">
+        <li class="task">Mission 1</li>
+        <li class="task">Mission 2</li>
+        <li class="task">Mission 3</li>
+    </ul>
+    <script>
+      let sonuc;
+      sonuc = document.getElementsByClassName("task")[0];
+      sonuc = document.getElementsByClassName("task")[1];
+
+      // ul = document.getElementById("task-list");
+      // task_list = document.getElementsByTagName("li");
+
+      task_list = document.querySelectorAll("#task-list li");
+
+      // taskList = document.getElementsByClassName("task");
+
+      // for (let i = 0; i < sonuc.length; i++) {
+      //   console.log(task_list[i]);
+      // }
+      //of liste içindeki elemana karşılık gelir  - in operatorü index'e karşılık gelir.
+      for (let task of task_list) {
+        task.style.color = "red";
+        task.style.fontSize = "30px";
+        // task.innerText = "Item";
+      }
+
+      // console.log(sonuc);
+    </script>
+  </body>
+</html>
