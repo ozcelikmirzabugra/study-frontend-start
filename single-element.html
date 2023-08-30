@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-header">
+      <h3 class="cart-title" id="title">Todo App</h3>
+      <ul id="task-list">
+        <li>Mission 1</li>
+        <li>Mission 2</li>
+        <li>Mission 3</li>
+      </ul>
+    </div>
+
+    <script>
+      let conclusion;
+
+      conclusion = document.getElementById("title");
+      conclusion = document.getElementById("title").id;
+      conclusion = document.getElementById("title").className;
+      conclusion = document.getElementById("title").classList;
+
+      // document.getElementById("title").style.display = "none";
+      document.getElementById("title").style.fontSize = "30px";
+      document.getElementById("title").style.color = "red";
+
+      document.getElementById("title").innerText = "<p>Todo App</p>";
+
+      conclusion = document.querySelector("#title");
+      conclusion = document.querySelector(".card-header"); //class olan card-header a ulaştık
+      conclusion = document.querySelector("div"); //div'i bulur
+
+      conclusion = document.querySelector("li");
+      conclusion = document.querySelector("li:first-child");
+      conclusion = document.querySelector("li:last-child");
+      conclusion = document.querySelector("li:nth-child(1)");
+
+      console.log(conclusion);
+    </script>
+  </body>
+</html>
